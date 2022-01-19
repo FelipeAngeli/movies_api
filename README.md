@@ -1,6 +1,10 @@
-# movies_api
+# movies_api #dio #uno #http #modular
 
-A new Flutter project.
+Projeto Movies, usando APIs (Http, Dio, Uno), com injeção de dependência.
+
+
+
+
 
 ## Getting Started
 

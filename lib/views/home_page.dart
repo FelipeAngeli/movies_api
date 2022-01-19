@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 import 'package:movies_api/controllers/home_controller.dart';
 import 'package:movies_api/services/dio_client.dart';
 import 'package:movies_api/services/json_placeholder_service.dart';
@@ -11,8 +12,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final controller = HomeController(JsonPlaceholderService(DioClient()));
-
+  //modular- injeção de dependencia
+  final controller = Modular.get<HomeController>();
   @override
   void initState() {
     super.initState();

@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
+import 'package:movies_api/modular/app_module.dart';
 
 import 'views/home_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(ModularApp(module: AppModule(), child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -17,6 +19,6 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.blue,
       ),
       home: HomePage(),
-    );
+    ).modular();
   }
 }
