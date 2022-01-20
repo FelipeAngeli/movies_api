@@ -5,6 +5,8 @@ import 'package:movies_api/modular/app_module.dart';
 import 'views/home_page.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+
   runApp(ModularApp(module: AppModule(), child: MyApp()));
 }
 
