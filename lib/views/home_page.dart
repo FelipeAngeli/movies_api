@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:movies_api/controllers/home_controller.dart';
-import 'package:movies_api/services/dio_client.dart';
-import 'package:movies_api/services/json_placeholder_service.dart';
 
 class HomePage extends StatefulWidget {
-  HomePage({Key? key}) : super(key: key);
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -28,7 +26,7 @@ class _HomePageState extends State<HomePage> {
         ),
         body: AnimatedBuilder(
           animation: controller,
-          builder: (context, Widget) {
+          builder: (context, widget) {
             return ListView.builder(
                 itemCount: controller.todos.length,
                 itemBuilder: (context, index) {

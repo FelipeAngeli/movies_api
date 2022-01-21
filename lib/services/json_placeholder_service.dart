@@ -1,4 +1,3 @@
-import 'package:dio/dio.dart';
 import 'package:movies_api/models/todo_model.dart';
 import 'package:movies_api/services/http_client_interface.dart';
 

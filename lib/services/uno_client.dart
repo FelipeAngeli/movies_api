@@ -1,4 +1,3 @@
-import 'package:dio/dio.dart';
 import 'package:uno/uno.dart';
 
 import 'http_client_interface.dart';

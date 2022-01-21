@@ -7,7 +7,7 @@ import 'views/home_page.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
 
-  runApp(ModularApp(module: AppModule(), child: MyApp()));
+  runApp(ModularApp(module: AppModule(), child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.blue,
       ),
-      home: HomePage(),
+      home: const HomePage(),
     ).modular();
   }
 }

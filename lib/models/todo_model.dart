@@ -4,7 +4,7 @@ class TodoModel {
 
   TodoModel({required this.name, required this.age});
 
-  static TodoModel fromJson(dynamic map) {
+  static TodoModel fromJson(map) {
     return TodoModel(
       name: map['name'],
       age: map['age'],
@@ -14,7 +14,7 @@ class TodoModel {
   //testes
 
   static TodoModel stub() => TodoModel(
-        name: "Auto da Compadecida",
+        name: 'Auto da Compadecida',
         age: 1987,
       );
 }
